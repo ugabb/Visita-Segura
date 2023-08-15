@@ -1,8 +1,10 @@
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
-    <>
-      <p className="text-4xl text-blue-500">Visita Segura</p>
-    </>
+    <div className="w-full">
+      <Navbar />
+    </div>
   );
 }
 
