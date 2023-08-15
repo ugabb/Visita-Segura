@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import { List, X } from "@phosphor-icons/react";
 
+import { NavLink } from "react-router-dom";
+
 type Props = {};
 
 const Navbar = (props: Props) => {
@@ -63,15 +65,29 @@ const Navbar = (props: Props) => {
       {/* Desktop MENU */}
       <div className="hidden lg:flex gap-10 ">
         <div className="flex items-center gap-5 ">
-          <a
-            href="#"
-            className="text-primaryColor font-semibold underline underline-offset-4"
+          <NavLink
+            to="/"
+            className={`${({ isActive, isPending }) =>
+              isPending
+                ? "pending"
+                : isActive
+                ? "active"
+                : ""} text-primaryColor font-semibold`}
           >
             Home
-          </a>
-          <a href="#" className="text-slateGray hover:text-primaryColor transition-all">
-            Meus Imóveis
-          </a>
+          </NavLink>
+
+          <NavLink
+            to="/meus-imoveis"
+            className={`${({ isActive, isPending }) =>
+              isPending
+                ? "pending"
+                : isActive
+                ? "active"
+                : ""} text-slateGray font-semibold  hover:text-primaryColor transition-all`}
+          >
+            Meus Imoveis
+          </NavLink>
         </div>
 
         <div className="flex items-center gap-3 text-slateGray hover:text-primaryColor transition-all cursor-pointer">

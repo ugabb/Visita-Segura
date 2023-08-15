@@ -1,10 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primaryColor: #004e81;
+  --secondaryColor: #0d263b;
+  --slateGray: #7c8893;
+  --navbarColor: #ecf2f9;
+}
+
 body {
   background: #f4f9ff;
+}
+
+.pending {
+  color: red;
+}
+.active {
+  color: var(--primaryColor);
+  text-decoration: underline;
+  text-underline-offset: .3rem;
 }
