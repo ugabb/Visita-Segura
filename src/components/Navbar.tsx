@@ -61,10 +61,12 @@ const Navbar = () => {
       {/* Hamburguer MENU */}
 
       {/* Desktop MENU */}
+
       <div className="hidden lg:flex gap-10 ">
         <div className="flex items-center gap-5 ">
           <NavLink
             to="/"
+            // @ts-ignore
             className={`${({ isActive, isPending }) =>
               isPending
                 ? "pending"
@@ -77,6 +79,7 @@ const Navbar = () => {
 
           <NavLink
             to="/meus-imoveis"
+            // @ts-ignore
             className={`${({ isActive, isPending }) =>
               isPending
                 ? "pending"
