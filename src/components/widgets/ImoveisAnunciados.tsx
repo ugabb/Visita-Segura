@@ -1,12 +1,10 @@
-import DefaultButton from "../DefaultButton";
-
 type Props = {
   stats: number;
 };
 
 const ImoveisAnunciados = ({ stats }: Props) => {
   return (
-    <div className="w-[259px] h-[182px] flex flex-col justify-center items-center bg-white text-slateGray font-roboto rounded-md shadow-xl">
+    <div className="w-[230px] h-[182px] flex flex-col justify-center items-center bg-white text-slateGray font-roboto rounded-md shadow-xl">
       <p className="text-xl">Imoveis Anunciados</p>
       <p className="text-4xl text-primaryColor font-bold">{stats}+</p>
       <p className="text-xl">Avaliações</p>

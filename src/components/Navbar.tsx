@@ -4,9 +4,7 @@ import { List, X } from "@phosphor-icons/react";
 
 import { NavLink } from "react-router-dom";
 
-type Props = {};
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   const [menuToggle, setMenuToggle] = useState<boolean>(false);
 
   const handleMenuToggle = () => {

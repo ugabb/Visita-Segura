@@ -1,13 +1,11 @@
 type Props = {
   text: string;
-  px: string;
-  py: string;
 };
 
-const DefaultButton = ({ text, px, py }: Props) => {
+const DefaultButton = ({ text }: Props) => {
   return (
     <button
-      className={`text-white font-inter bg-primaryColor rounded-md px-10 py-5`}
+      className={`text-white text-xs lg:text-base font-inter bg-primaryColor rounded-md px-10 py-5`}
     >
       {text}
     </button>
