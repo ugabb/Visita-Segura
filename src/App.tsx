@@ -1,13 +1,14 @@
+import MeusImoveisSection from "./components/MeusImoveisSection";
 import Navbar from "./components/Navbar";
 import ProfileSection from "./components/ProfileSection";
 import SearchSection from "./components/SearchSection";
 
 function App() {
   return (
-    <div className="w-full">
+    <div className="w-full h-screen">
       <Navbar />
       <ProfileSection />
-      <SearchSection />
+      <MeusImoveisSection />
     </div>
   );
 }
