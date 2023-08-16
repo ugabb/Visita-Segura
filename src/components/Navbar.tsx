@@ -72,7 +72,7 @@ const Navbar = (props: Props) => {
                 ? "pending"
                 : isActive
                 ? "active"
-                : ""} text-primaryColor font-semibold`}
+                : ""} text-slateGray font-semibold`}
           >
             Home
           </NavLink>
