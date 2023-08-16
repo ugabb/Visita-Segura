@@ -10,7 +10,7 @@ const ButtonWithIcon = ({ text, icon }: Props) => {
     <button
       className={`flex items-center justify-center gap-3 text-white text-xl font-inter bg-primaryColor rounded-md w-full px-5 py-3`}
     >
-      {icon && icon}
+      {icon}
       {text}
     </button>
   );

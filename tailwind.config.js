@@ -8,6 +8,7 @@ export default {
         secondaryColor: "#0D263B",
         slateGray: "#7C8893",
         navbarColor: "#ECF2F9",
+        green: "#ABC815",
       },
       fontFamily: {
         inter: ["Inter"],

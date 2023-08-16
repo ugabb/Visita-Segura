@@ -26,7 +26,7 @@ const Navbar = () => {
       <div
         className={`${
           menuToggle ? "block" : "hidden"
-        } border absolute top-0 right-0 bg-white w-full md:w-1/2 lg:hidden flex flex-col justify-end gap-3 p-5 shadow-md opacity-90 font-inter`}
+        } z-10 border absolute top-0 right-0 bg-white w-full md:w-1/2 lg:hidden flex flex-col justify-end gap-3 p-5 shadow-md opacity-90 font-inter`}
       >
         <X
           size={32}

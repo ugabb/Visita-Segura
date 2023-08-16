@@ -32,6 +32,7 @@ const ProfileSection = () => {
           />
           <ImoveisAnunciados stats={80} />
         </div>
+
       </div>
 
       <SearchSection />
