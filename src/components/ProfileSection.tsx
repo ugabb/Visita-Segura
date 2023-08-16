@@ -4,6 +4,8 @@ import ImoveisAnunciados from "./widgets/ImoveisAnunciados";
 import SearchSection from "./SearchSection";
 
 const ProfileSection = () => {
+
+
   return (
     <div className="w-full flex flex-col justify-center items-center gap-10 lg:gap-28 pt-5 lg:pt-20 pb-20 px-5 relative bg-[#f4f9ff]">
       <div className="flex flex-col lg:flex-row gap-10 p-10">
@@ -32,7 +34,6 @@ const ProfileSection = () => {
           />
           <ImoveisAnunciados stats={80} />
         </div>
-
       </div>
 
       <SearchSection />

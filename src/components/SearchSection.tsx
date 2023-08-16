@@ -1,33 +1,85 @@
+import { SelectHTMLAttributes, useEffect, useState } from "react";
+
 import { MagnifyingGlass } from "@phosphor-icons/react";
 import ButtonWithIcon from "./ButtonWithIcon";
 
-type Props = {};
+const SearchSection = () => {
+  const [searchImovel, setSearchImovel] = useState({
+    localizacao: "",
+    quartos: 0,
+    garagem: 0,
+    banheiros: 0,
+  });
+  useEffect(() => {
+    console.log(searchImovel);
+  }, [searchImovel]);
 
-const SearchSection = (props: Props) => {
+  // const handleInputChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  //   const { name, value } = e.target;
+  //   setSearchImovel((prevData) => ({
+  //     ...prevData,
+  //     [name]: value,
+  //   }));
+  //   console.log("change", searchImovel);
+  // };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSearchImovel({
+      localizacao: e.currentTarget.localizacao.value,
+      quartos: parseInt(e.currentTarget.quartos.value),
+      garagem: parseInt(e.currentTarget.garagem.value),
+      banheiros: parseInt(e.currentTarget.banheiros.value),
+    });
+  };
+
   return (
-    <form className="lg:absolute lg:-bottom-12 p-5 flex flex-col lg:flex-row lg:w-auto justify-between lg:justify-center items-center gap-2 bg-white w-full md:w-2/3 mx-auto shadow-md rounded-md">
-      <select name="" id="" className="selectArrow lg:w-40">
-        <option value="Test">Localização</option>
-        <option value="Test">Test</option>
-        <option value="Test">Test</option>
+    <form
+      onSubmit={handleSubmit}
+      className="lg:absolute lg:-bottom-12 p-5 flex flex-col lg:flex-row lg:w-auto justify-between lg:justify-center items-center gap-2 bg-white w-full md:w-2/3 mx-auto shadow-md rounded-md"
+    >
+      <select
+        name="localizacao"
+        id=""
+        className="selectArrow lg:w-40 xl:w-[246px]"
+        // onChange={handleInputChange}
+      >
+        <option value="">Localização</option>
+        <option value="Hogwarts">Hogwarts</option>
+        <option value="Gotham City">Gotham City</option>
       </select>
-      <select name="" id="" className="selectArrow lg:w-40">
-        <option value="Test">Quartos</option>
-        <option value="Test">Test</option>
-        <option value="Test">Test</option>
+      <select
+        name="quartos"
+        id=""
+        className="selectArrow lg:w-40 xl:w-[246px]"
+        // onChange={handleInputChange}
+      >
+        <option value="">Quartos</option>
+        <option value={1}>1</option>
+        <option value={2}>2</option>
       </select>
-      <select name="" id="" className="selectArrow lg:w-40">
-        <option value="Test">Garagem</option>
-        <option value="Test">Test</option>
-        <option value="Test">Test</option>
+      <select
+        name="garagem"
+        id=""
+        className="selectArrow lg:w-40 xl:w-[246px]"
+        // onChange={handleInputChange}
+      >
+        <option value="">Garagem</option>
+        <option value={1}>1</option>
+        <option value={2}>2</option>
       </select>
-      <select name="" id="" className="selectArrow lg:w-40">
-        <option value="Test">Banheiros</option>
-        <option value="Test">Test</option>
-        <option value="Test">Test</option>
+      <select
+        name="banheiros"
+        id=""
+        className="selectArrow lg:w-40 xl:w-[246px]"
+        // onChange={handleInputChange}
+      >
+        <option value="">Banheiros</option>
+        <option value={1}>1</option>
+        <option value={2}>2</option>
       </select>
 
-      <div className="lg:w-auto">
+      <div className="lg:w-auto" onSubmit={handleSubmit}>
         <ButtonWithIcon text="Buscar" icon={<MagnifyingGlass size={32} />} />
       </div>
     </form>
