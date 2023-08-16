@@ -9,9 +9,7 @@ import {
 
 import TextWithIcon from "./TextWithIcon";
 
-type Props = {};
-
-const ImovelCard = (props: Props) => {
+const ImovelCard = () => {
   return (
     <div className="w-full md:w-[355px] flex flex-col gap-5 shadow-lg">
       <img src="./1-imovel.jpeg" alt="" className="aspect-video" />

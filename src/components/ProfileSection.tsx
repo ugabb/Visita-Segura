@@ -1,4 +1,4 @@
-import React from "react";
+
 import DefaultButton from "./DefaultButton";
 import ImoveisAnunciados from "./widgets/ImoveisAnunciados";
 import SearchSection from "./SearchSection";

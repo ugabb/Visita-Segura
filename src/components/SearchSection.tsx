@@ -1,4 +1,4 @@
-import { SelectHTMLAttributes, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { MagnifyingGlass } from "@phosphor-icons/react";
 import ButtonWithIcon from "./ButtonWithIcon";
@@ -79,7 +79,7 @@ const SearchSection = () => {
         <option value={2}>2</option>
       </select>
 
-      <div className="lg:w-auto" onSubmit={handleSubmit}>
+      <div className="lg:w-auto">
         <ButtonWithIcon text="Buscar" icon={<MagnifyingGlass size={32} />} />
       </div>
     </form>

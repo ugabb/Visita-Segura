@@ -1,9 +1,8 @@
-import React from "react";
+
 import ImovelCard from "./ImovelCard/ImovelCard";
 
-type Props = {};
 
-const MeusImoveisSection = (props: Props) => {
+const MeusImoveisSection = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center text-center gap-5 py-20 ">
       <h3 className="text-primaryColor text-lg font-roboto uppercase">
