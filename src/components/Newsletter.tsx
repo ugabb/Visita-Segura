@@ -1,6 +1,22 @@
+import { FormEvent, useState } from "react";
+
 const Newsletter = () => {
+  const [email, setEmail] = useState<string>("");
+
+  const handleEmailInput = (e: FormEvent<HTMLInputElement>) => {
+    const inputValue = e.currentTarget.value;
+    setEmail(inputValue);
+  };
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    console.log(email);
+  };
+
   return (
-    <section className="p-10 bg-primaryColor flex flex-col lg:flex-row justify-center items-center text-white font-roboto gap-5">
+    <form
+      onSubmit={handleSubmit}
+      className="p-10 bg-primaryColor flex flex-col lg:flex-row justify-center items-center text-white font-roboto gap-5"
+    >
       <div className="lg:w-1/2 space-y-2 text-center">
         <h2 className="text-4xl font-bold whitespace-nowrap">
           Assine nosso Newsletter
@@ -14,6 +30,7 @@ const Newsletter = () => {
           type="email"
           className="rounded-t-lg w-full md:w-[458px] px-5 py-3 text-black md:rounded-s-lg md:rounded-t-none"
           placeholder="Digite seu e-mail para se inscrever..."
+          onChange={handleEmailInput}
         />
         <button
           dir="rtl"
@@ -23,7 +40,7 @@ const Newsletter = () => {
           Assinar
         </button>
       </div>
-    </section>
+    </form>
   );
 };
 
