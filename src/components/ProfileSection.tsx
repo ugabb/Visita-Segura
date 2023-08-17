@@ -8,8 +8,8 @@ const ProfileSection = () => {
 
   return (
     <div className="w-full flex flex-col justify-center items-center gap-10 lg:gap-28 pt-5 lg:pt-20 pb-20 px-5 relative bg-[#f4f9ff]">
-      <div className="flex flex-col lg:flex-row gap-10 p-10">
-        <div className="text-center md:text-left">
+      <div className="flex flex-col  lg:flex-row gap-10 p-10">
+        <div className="text-center flex flex-col md:justify-center items-center">
           <h1 className="text-3xl lg:text-6xl  font-bold font-inter text-secondaryColor mb-5">
             Charlin Meu Filho
           </h1>
