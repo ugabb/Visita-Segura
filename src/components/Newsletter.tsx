@@ -28,7 +28,7 @@ const Newsletter = () => {
         <input
           dir="ltr"
           type="email"
-          className="rounded-t-lg w-full md:w-[458px] px-5 py-3 text-black md:rounded-s-lg md:rounded-t-none"
+          className="rounded-t-lg w-full md:w-[458px] px-5 py-3 text-black md:rounded-s-xl md:rounded-t-none hover:bg-lightBlue hover:placeholder:text-secondaryColor focus:outline-none"
           placeholder="Digite seu e-mail para se inscrever..."
           onChange={handleEmailInput}
           required
@@ -36,7 +36,7 @@ const Newsletter = () => {
         <button
           dir="rtl"
           type="submit"
-          className="uppercase text-sm bg-secondaryColor rounded-b-lg px-5 py-3 md:rounded-s-lg md:rounded-b-none hover:scale-105 hover:shadow-md"
+          className="uppercase text-sm bg-secondaryColor rounded-b-lg px-5 py-3 md:rounded-s-lg md:rounded-b-none hover:bg-lightBlue hover:text-secondaryColor transition-all"
         >
           Assinar
         </button>

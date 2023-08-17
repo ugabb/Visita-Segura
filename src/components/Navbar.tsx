@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { List, X } from "@phosphor-icons/react";
 
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [menuToggle, setMenuToggle] = useState<boolean>(false);
@@ -13,8 +13,13 @@ const Navbar = () => {
 
   return (
     <nav className="flex justify-between lg:justify-around p-5 lg:px-10 lg:bg-navbarColor">
-      <img src="./logo.png" alt="logo Visita Segura" className="w-[70px]" />
-
+      <Link to={'/'}>
+        <img
+          src="./logo.png"
+          alt="logo Visita Segura"
+          className="w-[70px] cursor-pointer hover:scale-105 transition-all"
+        />
+      </Link>
       <List
         size={32}
         weight="light"

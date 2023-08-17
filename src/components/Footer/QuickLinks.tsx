@@ -16,10 +16,15 @@ const QuickLinks = ({ title, quickLinks }: Props) => {
       {quickLinks.map((links) => (
         <div
           key={links.text}
-          className="flex items-center gap-3 space-y-1 md:space-y-3 text-sm"
+          className="flex items-center gap-3 space-y-1 md:space-y-3 text-sm "
         >
           {links?.icon}
-          <a href={links.url}>{links.text}</a>
+          <a
+            className=" hover:text-primaryColor transition-all cursor-pointer"
+            href={links.url}
+          >
+            {links.text}
+          </a>
         </div>
       ))}
     </div>

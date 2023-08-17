@@ -41,7 +41,7 @@ const SearchSection = () => {
       <select
         name="localizacao"
         id=""
-        className="selectArrow lg:w-40 xl:w-[246px]"
+        className="selectArrow lg:w-40 xl:w-[246px] cursor-pointer"
         // onChange={handleInputChange}
       >
         <option value="">Localização</option>
@@ -51,7 +51,7 @@ const SearchSection = () => {
       <select
         name="quartos"
         id=""
-        className="selectArrow lg:w-40 xl:w-[246px]"
+        className="selectArrow lg:w-40 xl:w-[246px] cursor-pointer"
         // onChange={handleInputChange}
       >
         <option value="">Quartos</option>
@@ -61,7 +61,7 @@ const SearchSection = () => {
       <select
         name="garagem"
         id=""
-        className="selectArrow lg:w-40 xl:w-[246px]"
+        className="selectArrow lg:w-40 xl:w-[246px] cursor-pointer"
         // onChange={handleInputChange}
       >
         <option value="">Garagem</option>
@@ -71,7 +71,7 @@ const SearchSection = () => {
       <select
         name="banheiros"
         id=""
-        className="selectArrow lg:w-40 xl:w-[246px]"
+        className="selectArrow lg:w-40 xl:w-[246px] cursor-pointer"
         // onChange={handleInputChange}
       >
         <option value="">Banheiros</option>
@@ -79,7 +79,7 @@ const SearchSection = () => {
         <option value={2}>2</option>
       </select>
 
-      <div className="lg:w-auto">
+      <div className="lg:w-aut">
         <ButtonWithIcon text="Buscar" icon={<MagnifyingGlass size={32} />} />
       </div>
     </form>
