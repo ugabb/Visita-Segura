@@ -44,7 +44,7 @@ const Navbar = () => {
           >
             Home
           </a>
-          <a href="#" className="text-slateGray">
+          <a href="/meus-imoveis" className="text-slateGray">
             Meus Imóveis
           </a>
         </div>
