@@ -18,7 +18,7 @@ const Newsletter = () => {
       className="p-10 bg-primaryColor flex flex-col lg:flex-row justify-center items-center text-white font-roboto gap-5"
     >
       <div className="lg:w-1/2 space-y-2 text-center">
-        <h2 className="text-4xl font-bold whitespace-nowrap">
+        <h2 className="text-4xl font-bold lg:whitespace-nowrap">
           Assine nosso Newsletter
         </h2>
         <p className="text-lg">Registre-se agora para receber atualizações.</p>
@@ -31,6 +31,7 @@ const Newsletter = () => {
           className="rounded-t-lg w-full md:w-[458px] px-5 py-3 text-black md:rounded-s-lg md:rounded-t-none"
           placeholder="Digite seu e-mail para se inscrever..."
           onChange={handleEmailInput}
+          required
         />
         <button
           dir="rtl"

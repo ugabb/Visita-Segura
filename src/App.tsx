@@ -1,3 +1,4 @@
+import Footer from "./components/Footer/Footer";
 import MeusImoveisSection from "./components/MeusImoveisSection";
 import Navbar from "./components/Navbar";
 import Newsletter from "./components/Newsletter";
@@ -12,6 +13,7 @@ function App() {
       <MeusImoveisSection />
       <Service />
       <Newsletter />
+      <Footer />
     </div>
   );
 }
