@@ -12,7 +12,7 @@ const MeusImoveisSection = () => {
         Veja nossa ofertas
       </h2>
 
-      <div className="sm:grid sm:grid-cols-2 lg:grid-cols-3 p-5 gap-5 justify-items-center">
+      <div className="sm:grid sm:grid-cols-2 lg:grid-cols-3 p-5 gap-5 justify-items-center space-y-5 md:space-y-0">
         <ImovelCard />
         <ImovelCard />
         <ImovelCard />

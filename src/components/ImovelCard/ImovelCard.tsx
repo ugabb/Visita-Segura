@@ -11,7 +11,7 @@ import TextWithIcon from "./TextWithIcon";
 
 const ImovelCard = () => {
   return (
-    <div className="w-full md:w-[355px] flex flex-col gap-5 shadow-lg">
+    <div className="w-full md:w-[355px] lg:w-[325px]  flex flex-col gap-5 shadow-lg">
       <img src="./1-imovel.jpeg" alt="" className="aspect-video" />
       <div className="flex flex-col gap-1 px-5">
         <h4 className="text-center font-inter text-xl font-semibold text-black">

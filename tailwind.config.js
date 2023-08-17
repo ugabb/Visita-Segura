@@ -9,6 +9,7 @@ export default {
         slateGray: "#7C8893",
         navbarColor: "#ECF2F9",
         green: "#ABC815",
+        lightBlue: "#E2EFFF",
       },
       fontFamily: {
         inter: ["Inter"],
